@@ -1,4 +1,4 @@
-package com.souphorn.spring_template;
+package com.souphorn.spring.template;
 
 import org.junit.Test;
 
