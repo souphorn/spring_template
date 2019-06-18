@@ -1,7 +1,6 @@
 package com.souphorn.spring.template.product.domain;
 
 import lombok.Data;
-import org.springframework.stereotype.Component;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
