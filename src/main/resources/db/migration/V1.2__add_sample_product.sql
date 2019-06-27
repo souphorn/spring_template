@@ -1,0 +1,1 @@
+INSERT INTO product (name) VALUES ('prudct1'), ('product2')
