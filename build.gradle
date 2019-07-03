@@ -34,15 +34,26 @@ dependencies {
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
 	// Data & Database
-//	runtimeOnly 'mysql:mysql-connector-java'
-//	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	runtimeOnly 'mysql:mysql-connector-java'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+	//Db migration
+	implementation 'org.flywaydb:flyway-core:5.2.4'
+
+	//Db connection pool
+	compile 'org.apache.tomcat:tomcat-jdbc:9.0.21'
+
+	//Security
+	implementation 'org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.1.6.RELEASE'
 
 	//Lombok
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.security:spring-security-test'
-    testCompile 'com.h2database:h2'
+    testImplementation 'com.h2database:h2'
+	testCompile 'ch.vorburger.mariaDB4j:mariaDB4j:2.4.0'
+
 }
 checkstyle {
 	configFile file("${project.rootDir}/config/checkstyle/checkstyle.xml")
