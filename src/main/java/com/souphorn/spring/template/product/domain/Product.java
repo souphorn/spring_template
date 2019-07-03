@@ -23,6 +23,10 @@ public class Product implements Serializable {
         this.id = id;
     }
 
+    public Product() {
+
+    }
+
     public String toString() {
         return "Name: " + getName() + ", ID: " + getId();
     }
